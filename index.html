@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Code Generator</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Generate kode acak seperti CLAU-Q6RP-6K3A — clean, modern, minimal." />
+</head>
+<body>
+  <main class="center">
+    <div class="card" role="region" aria-label="Random Code Generator">
+      <header class="card-header">
+        <h1>Random Code</h1>
+        <p class="sub">Format: <strong>XXXX-XXXX-XXXX</strong> (huruf besar + angka)</p>
+      </header>
+
+      <div class="code-area" id="codeArea" aria-live="polite">----</div>
+
+      <div class="controls">
+        <button id="regenBtn" class="btn primary">Generate</button>
+        <button id="copyBtn" class="btn">Copy</button>
+        <div class="settings">
+          <label>
+            Segmen
+            <input id="segments" type="number" min="1" max="6" value="3" />
+          </label>
+          <label>
+            Panjang tiap segmen
+            <input id="segLen" type="number" min="1" max="8" value="4" />
+          </label>
+        </div>
+      </div>
+
+      <footer class="card-footer">
+        <small>Minimalist generator — siap deploy ke Vercel</small>
+      </footer>
+    </div>
+  </main>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
